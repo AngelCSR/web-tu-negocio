@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            /*border: 1px solid red*/
+        }
+        body { background-image: url(https://hips.hearstapps.com/hmg-prod/images/yoga-hummingpuppy-ny-1527602858.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        }
+        /********************************************
+            BARRA DE NAVEGACIÓN
+        ********************************************/
+        nav {  background-color: green; 
+            display: flex;
+            justify-content: space-around; 
+            position: sticky;/*se pega arriba todo el rato*/
+            top:0;
+        }
+
+        nav a { text-decoration: none;
+                color:white; 
+                padding: 20px;       
+        }
+        nav a:hover { color:yellow; font-weight: bold;text-shadow: 3px 3px 3px black;}
+        /********************************************
+           HEADER ( CABECERA )
+        ********************************************/
+        header {
+            background-image: url(https://images.adsttc.com/media/images/628f/7202/abc8/f701/66a2/eb85/newsletter/yoga-studios-roundup-14-projects_2.jpg?1653568009);
+            background-size: cover;
+            background-position: center center;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        header h1 { color:yellow;
+             font-size: 4em;}
+        header h2 { color:white}
+        #t1{font-size: 1.5em;}
+        #caja-titulos { 
+            text-align: center;
+            text-shadow: 3px 3px 3px black;
+        }
+
+        section#servicios {
+            
+        }
+        #contenedor-servicios {
+            display: flex;
+            padding: 10px;
+            justify-content: space-around;
+        }
+        .titulo {
+            color:rgb(192, 233, 81);
+            text-align: center;
+            text-shadow: 2px 2px 3px black;
+            background-color: aquamarine;
+        }
+        section {
+            padding: 20px
+        }
+        #contenedor-obras { display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        border: 2px solid orange;
+        padding: 10px;
+        
+        }
+        #contenedor-obras img { width: 80%;}
+
+        #contenedor-obras article { width: 30%;
+            box-shadow: 3px 3px 3px black;
+            text-align: center;
+            background-color: white;
+            margin-top: 10px;
+            padding: 20px;
+            border-radius: 5px;
+
+
+        }
+        section#obras {
+            background-color: antiquewhite;
+        }
+        footer {
+            background-color: grey;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            padding: 20px;
+        }
+        footer h2 { font-size: .9em;}
+        #contacte {
+            width: 100%;
+            border-bottom: 2px solid white;
+            
+        }
+        #enlaces {width: 33%; }
+        #enlaces a {color:white;
+        text-decoration: none; }
+        #enlaces a:hover { font-size: aa;}
+        #email {width: 33%; }
+        #estamos-en  {width: 33%; }
+        footer div {padding: 10px;}
+        #contenedor-clientes {
+            display: flex;
+            justify-content: space-around;
+            color: antiquewhite;
+            
+            padding-top: 10px;
+        }
+        #contenedor-clientes article{
+            width: 30%;
+            text-align: center;
+           
+        }
+        #contenedor-clientes article h3 { font-style: italic;}
+        #contenedor-clientes article img { width: 40%;border-radius: 50%;}
+        #izquierda, #derecha { width: 40%;}
+        #derecha{ color: antiquewhite;}
+        @media screen  and ( max-width: 500px){
+            header{
+              
+            background-image: url("images/yogaone-moncloa.jpg");
+            background-size: cover;
+            background-position: center center;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+     
+            }
+            nav{
+                background-color: blue;
+                display: block;
+                text-align: center;
+                font-size: 1em;
+                position: auto;
+                top: auto;
+
+            }
+            nav a {
+                display: block;
+            }
+            #contenedor-servicios {
+            display: block;
+            
+            }
+            #izquierda, #derecha {
+                 width: 90%;
+                 margin: auto;
+                
+                } 
+           #contenedor-obras article { width: 90%;
+              }  
+              #contenedor-clientes {
+            display: block;
+        
+        }
+              #contenedor-clientes article{
+            width: 90%;
+              }
+              #t1{font-size: 2em;}
+              #opiniones-clientes article{
+                color: antiquewhite;
+              }
+              footer {
+            background-color: grey;
+            color: white;
+            display: block;
+            flex-wrap: wrap;
+            text-align: center;
+            
+            padding: 20px;
+        }
+        footer div {
+            width: 100%;
+            display: block;
+            text-align: center;
+            align-items: center;
+            
+        }
+        #enlaces{
+            width: 100%;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+  
+        #estamos-en{
+            width: 100%;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+        #email{
+            width: 100%;
+            display: block;
+            align-items: center;
+            text-align: center;
+        }
+  
+        }/*fin @media*/
+      
+    </style>
+    <script src="https://kit.fontawesome.com/fe060c3d5b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <header>
+        <div id="caja-titulos">
+            <h1>Keisho</h1>
+            <h2 id="t1">Centro de Yoga<h2>
+            <i class="fa-solid fa-dumbbell"></i>
+        </div>
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#servicios">Quienes sommos</a>
+        <a href="#obras">Donde estamos</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <section id="servicios">
+        <h1 class="titulo">Quienes somos</h1>
+        <div id="contenedor-servicios">
+
+            <img id="izquierda" src="images/gettyimages-1498044513-612x612.jpg"alt="">
+           
+            <div id="derecha">
+                <h2>Sobre nosotros</h2>
+                <p>Experimenta la increíble sensación de paz y armonía que supone lograr un equilibro entre tu Mente, Cuerpo y Ser.
+
+                    Cada una de las prácticas que realizamos en el Centro de Yoga Keisho, en Alcázar de San Juan, tienen como objetivo restablecer tus funciones físicas, alcanzar la calma mental contigo misma y aumentar tu energía hasta sentir una sensación de máximo bienestar, tanto interior como exterior.
+                    
+                    Déjanos que cuidemos de ti disfrutando de un masaje facial o descontracturante,  probando los beneficios de la acupuntura, entrenando tu agilidad mental y física en nuestras clases de yoga o parando el tiempo para vivir solo el momento presente con las sesiones de meditación y mindfulness.
+                    
+                    Pásate por nuestros centros Keisho en Alcázar de San Juan y comprueba por qué la felicidad es una mezcla de equilibrio, orden, ritmo y armonía y por qué nuestros clientes salen del centro renovados y felices.</p>
+            </div>
+        </div>
+    </section>
+   
+    <section id="opiniones-clientes">
+        <h1 class="titulo">Opiniones de nuestros clientes</h1>
+        <div id="contenedor-clientes">
+            <article>
+                <img src="images/photo-1438761681033-6461ffad8d80.jpeg" alt="">
+                <h3>"Son los mejores</h3>
+                <p>Juana López</p>
+            </article>
+            <article>
+                <img src="images/images (1).jpeg">
+                <h3>"Son Estupendos</h3>
+                <p>María Gómez</p>
+            </article>
+            <article>
+                <img src="https://previews.123rf.com/images/rawpixel/rawpixel1704/rawpixel170441704/76561515-retrato-de-personas-estudio-disparar-con-expresi%C3%B3n-de-cara-sonriente.jpg" alt="">
+
+                <h3>"Buen servicio a un precio insuperable</h3>
+                <p>Pepe Martínez</p>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div id="contacte">
+            Contacte con nosotros
+        </div>
+        <div id="enlaces">
+            <h2>Enlaces</h2>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
+            <a href="#">Twiter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div id="estamos-en">
+            <h2>Estamos en</h2>
+            <p>Avda Institutos s/n</p>
+            <p>13700 Alcázar de San Juan</p>
+        </div>
+        <div id="email">
+            <h2>E-mail</h2>
+            <p>keisho@yoga.com</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
